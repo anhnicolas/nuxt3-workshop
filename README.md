@@ -1,6 +1,6 @@
 # Nuxt 3 Workshop
 
-Welcome to the Nuxt 3 workshop! This guide will take you through the steps to set up your environment, create a Nuxt 3 project, and build a sample application.
+Welcome to the Nuxt 3 workshop! This guide will take you through the steps to set up your environment, create a Nuxt 3 project, and build a simple application.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -32,3 +32,8 @@ Nuxt 3 is a powerful framework for building server-side rendered (SSR) and stati
    ```bash
    npx nuxi init nuxt3-workshop
    cd nuxt3-workshop
+   ```
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
