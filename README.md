@@ -10,6 +10,7 @@ Welcome to the Nuxt 3 workshop! This guide will take you through the steps to se
 5. [Exercice 3](#exercice-3-content)
 6. [Exercice 4](#exercice-4-query-content)
 7. [Exercice 5](#exercice-5-display-your-projects-from-github)
+8. [Exercice 6](#exercice-6-deploy-your-website)
 
 ## Introduction
 [Nuxt3](https://nuxt.com/) is an open-source Vue framework for building modern web applications that makes development painless and powerful with a great developer experience.
