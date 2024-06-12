@@ -44,17 +44,17 @@ Some of these features are what make Nuxt performant and a good choice for your 
    OR you can install npm when creating the project
 
 3. Install talwindcss and tailwind typography
-https://tailwindcss.com/docs/guides/nuxtjs
-https://github.com/tailwindlabs/tailwindcss-typography
+- https://tailwindcss.com/docs/guides/nuxtjs
+- https://github.com/tailwindlabs/tailwindcss-typography
 
 4. Install Nuxt Content
-https://content.nuxt.com/get-started/installation
+- https://content.nuxt.com/get-started/installation
 
 5. Install Nuxt Icon
-https://nuxt.com/modules/icon
+- https://nuxt.com/modules/icon
 
 6. Install Nuxt Apollo
-https://apollo.nuxtjs.org/getting-started/quick-start
+- https://apollo.nuxtjs.org/getting-started/quick-start
 
 7. Development Server:
    ```bash
