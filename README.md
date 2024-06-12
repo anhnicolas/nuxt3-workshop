@@ -64,16 +64,36 @@ Some of these features are what make Nuxt performant and a good choice for your 
 ## Exercice 2 (Pages and Components)
 Pages represent views for each specific route pattern. components are reusable pieces of the user interface, like buttons and menus.
 
-1. Create your first page displaying "Hello World !" in `pages/` directory in the root directory of your project
-2. Add to your page a "SiteHeader.vue" and "SiteFooter.vue" component in `components/` directory in the root directory of your project
+1. Create your first page `index.vue` displaying "Hello World !" in `pages/` directory in the root directory of your project, and add it to `app.vue`
+- https://nuxt.com/docs/getting-started/views
+2. Add to your `app.vue` a "SiteHeader.vue" and "SiteFooter.vue" component in `components/` directory in the root directory of your project
 - https://nuxt.com/docs/getting-started/views
 3. Customize the home page and the components as your liking (you can inspire yourself from the folder associated to this workshop)
 
 ## Exercice 3 (Content)
 1. Place Markdown Files (blog post) inside the `content/blog/` directory in the root directory of your project
-2. Create a catch-all-route in `pages/blog/` and use `<ContentDoc />`
+2. Create a catch-all-route in `pages/blog/` and use `<ContentDoc />` to display your content
 - https://nuxt.com/docs/guide/directory-structure/pages
 - https://content.nuxt.com/components/content-doc
 3. Use tailwind typography to make your markdown look good
+```
+<ContentDoc class="prose"/>
+```
 4. Create a markdown component that is reusable in `components/content/`
 
+## Exercice 4 (Query Content)
+1. Add a front matter to each of your blog posts
+```example_blog_post.md
+---
+title: Hello, World!
+description: This is my very first blog post and I'm so excited to share it with you!
+date: 2023-05-23
+cover: nasa-Q1p7bh3SHj8-unsplash.jpg
+tags:
+  - blog
+---
+```
+2. In your catch all route in `pages/blog/` add a script to query the content and replace `<ContentRenderer />` to display your content
+- https://content.nuxt.com/usage/render
+3. Create a page `index.vue` that can display all your blog posts front matter in `pages/blog/`. Use a script to query all your posts
+4. Try to use a component to display your blog post front matter
