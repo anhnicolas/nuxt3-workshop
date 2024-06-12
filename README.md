@@ -98,7 +98,7 @@ tags:
 2. In your catch all route in `pages/blog/` add a script to query the content and replace `<ContentRenderer />` to display your content
 - https://content.nuxt.com/usage/render
 3. Create a page `index.vue` that can display all your blog posts front matter in `pages/blog/`. Use a script to query all your posts
-4. Try to use a component to display your blog post front matter and maybe add your latest post on the home page
+4. Try to use a component to display your blog post front matter and maybe add your latest posts on the home page
 
 ## Exercice 5 (Display your projects from github)
 1. Create a token on github to access the GitHub API with `public_repo` permissions and add it to an `.env` in your root directory
