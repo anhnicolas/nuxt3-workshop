@@ -62,8 +62,8 @@ Some of these features are what make Nuxt performant and a good choice for your 
    ```
 
 ## Exercice 2 (Pages and Components)
-Pages represent views for each specific route pattern.
+Pages represent views for each specific route pattern. components are reusable pieces of the user interface, like buttons and menus.
 
-- Create your first page displaying "Hello World !"
-- Add to your page a "SiteHeader.vue" and "SiteFooter.vue" component
-https://nuxt.com/docs/getting-started/views
+1. Create your first page displaying "Hello World !"
+2. Add to your page a "SiteHeader.vue" and "SiteFooter.vue" component
+- https://nuxt.com/docs/getting-started/views
