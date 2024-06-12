@@ -1,6 +1,6 @@
 # Nuxt 3 Workshop
 
-Welcome to the Nuxt 3 workshop! This guide will take you through the steps to set up your environment, create a Nuxt 3 portfolio.
+Welcome to the Nuxt 3 workshop! This guide will take you through the steps to set up your environment, create a Nuxt 3 blog and portfolio.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -64,10 +64,16 @@ Some of these features are what make Nuxt performant and a good choice for your 
 ## Exercice 2 (Pages and Components)
 Pages represent views for each specific route pattern. components are reusable pieces of the user interface, like buttons and menus.
 
-1. Create your first page displaying "Hello World !"
-2. Add to your page a "SiteHeader.vue" and "SiteFooter.vue" component
+1. Create your first page displaying "Hello World !" in `pages/` directory in the root directory of your project
+2. Add to your page a "SiteHeader.vue" and "SiteFooter.vue" component in `components/` directory in the root directory of your project
 - https://nuxt.com/docs/getting-started/views
 3. Customize the home page and the components as your liking (you can inspire yourself from the folder associated to this workshop)
 
 ## Exercice 3 (Content)
-1. Place Markdown Files (blog post) inside the `content/`
+1. Place Markdown Files (blog post) inside the `content/blog/` directory in the root directory of your project
+2. Create a catch-all-route in `pages/blog/` and use `<ContentDoc />`
+- https://nuxt.com/docs/guide/directory-structure/pages
+- https://content.nuxt.com/components/content-doc
+3. Use tailwind typography to make your markdown look good
+4. Create a markdown component that is reusable in `components/content/`
+
