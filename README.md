@@ -61,4 +61,9 @@ Some of these features are what make Nuxt performant and a good choice for your 
    npm run dev
    ```
 
-## Exercice 2 ()
+## Exercice 2 (Pages and Components)
+Pages represent views for each specific route pattern.
+
+- Create your first page displaying "Hello World !"
+- Add to your page a "SiteHeader.vue" and "SiteFooter.vue" component
+https://nuxt.com/docs/getting-started/views
