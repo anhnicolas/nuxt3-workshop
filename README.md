@@ -1,6 +1,6 @@
 # Nuxt 3 Workshop
 
-Welcome to the Nuxt 3 workshop! This guide will take you through the steps to set up your environment, create a Nuxt 3 blog and portfolio.
+Welcome to the Nuxt 3 workshop! This guide will take you through the steps to set up your environment, create a blog and portfolio using Nuxt 3 and GraphQL.
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -96,4 +96,57 @@ tags:
 2. In your catch all route in `pages/blog/` add a script to query the content and replace `<ContentRenderer />` to display your content
 - https://content.nuxt.com/usage/render
 3. Create a page `index.vue` that can display all your blog posts front matter in `pages/blog/`. Use a script to query all your posts
-4. Try to use a component to display your blog post front matter
+4. Try to use a component to display your blog post front matter and maybe add your latest post on the home page
+
+## Exercice 5 (Display your projects from github)
+1. Create a token on github to access the GitHub API with `public_repo` permissions and add it to an `.env` in your root directory
+```.env
+GITHUB_TOKEN = 'YOUR_GITHUB_TOKEN'
+```
+- https://github.com/settings/tokens
+2. Update your `nuxt.config.ts` with :
+```nuxt.config.ts
+runtimeConfig: {
+    githubToken: process.env.GITHUB_TOKEN
+},
+```
+```nuxt.config.ts
+apollo: {
+    clients: {
+      default: {
+        tokenName: 'github-token',
+        httpEndpoint: 'https://api.github.com/graphql'
+      }
+    }
+  }
+```
+2. Create a plugin `apollo.js` in `plugins/` at the root of the repository
+- https://apollo.nuxtjs.org/recipes/authentication
+3. Create a page `projects.vue` that will display your github project in `pages/` and write a script in it that will query your projects. You can use this query :
+```
+{
+  viewer {
+    repositories(first: 6, orderBy:{field:CREATED_AT,direction: DESC}) {
+      totalCount
+      nodes {
+        id
+        name
+        createdAt
+        description
+        url
+        forks {
+          totalCount
+        }
+        watchers {
+          totalCount
+        }
+        stargazers {
+          totalCount
+        }
+      }
+    }
+  }
+}
+```
+Or you can build your own query using GitHub GraphQL API explorer
+- https://docs.github.com/fr/graphql/overview/explorer

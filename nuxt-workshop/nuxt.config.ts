@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     '@nuxtjs/apollo',
     'nuxt-headlessui'
   ],
+  runtimeConfig: {
+    githubToken: process.env.GITHUB_TOKEN
+  },
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
