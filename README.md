@@ -70,4 +70,4 @@ Pages represent views for each specific route pattern. components are reusable p
 3. Customize the home page and the components as your liking (you can inspire yourself from the folder associated to this workshop)
 
 ## Exercice 3 (Content)
-1. Place Markdown Files (blog post) inside the ==content/==
+1. Place Markdown Files (blog post) inside the `content/`
