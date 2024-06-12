@@ -154,4 +154,8 @@ Or you can build your own query using GitHub GraphQL API explorer
 - https://docs.github.com/fr/graphql/overview/explorer
 - https://apollo.nuxtjs.org/getting-started/quick-start
 
+## Exercice 6 (Deploy your website)
+1. You can use for example netlify to deploy your project
+- https://docs.netlify.com/frameworks/nuxt/
+
 ### **Good Job ! You finished sucessfully this workshop !**
