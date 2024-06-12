@@ -23,8 +23,7 @@ Some of these features are what make Nuxt performant and a good choice for your 
 * Powerful Lighthouse scores out of the box!
 * Pre-processing - SCSS, SASS, LESS.
 
-## Setup
-### Prerequisites
+## Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher)
 - Text editor - We recommend Visual Studio Code with the official Vue extension (previously known as Volar)
 - npm
@@ -150,3 +149,6 @@ apollo: {
 ```
 Or you can build your own query using GitHub GraphQL API explorer
 - https://docs.github.com/fr/graphql/overview/explorer
+- https://apollo.nuxtjs.org/getting-started/quick-start
+
+#### **Good Job ! You finished sucessfully this workshop !**

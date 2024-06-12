@@ -41,8 +41,7 @@ const { data } = await useAsyncQuery(query);
       <div class="mt-4">
         <Icon name="fontisto:star" size="1.1rem" class="text-indigo-700" /> Stars: {{ project.stargazers.totalCount }}
         <Icon name="system-uicons:branch" size="1.1rem" class="text-indigo-800" /> Forks: {{ project.forks.totalCount }}
-        <Icon name="system-uicons:eye" size="1.1rem" class="text-indigo-700" /> Watchers: {{
-          project.watchers.totalCount }}
+        <Icon name="system-uicons:eye" size="1.1rem" class="text-indigo-700" /> Watchers: {{ project.watchers.totalCount }}
       </div>
     </div>
   </section>
