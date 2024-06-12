@@ -158,4 +158,5 @@ Or you can build your own query using GitHub GraphQL API explorer
 1. You can use for example netlify to deploy your project
 - https://docs.netlify.com/frameworks/nuxt/
 
+
 ### **Good Job ! You finished sucessfully this workshop !**
